@@ -1,0 +1,44 @@
+.button {
+	padding: calc(var(--index) * 0.6) calc(var(--index) * 1.2);
+
+	cursor: pointer;
+
+	transition: all 300ms ease-in-out;
+
+	border: 1px solid white;
+
+	background: transparent;
+
+	font-family: 'Android', sans-serif;
+	font-size: calc(var(--index) * 0.9);
+
+	&:hover {
+		background: white;
+
+		span {
+			filter: invert(1);
+		}
+	}
+
+	span {
+		transition: all 300ms ease-in-out;
+	}
+}
+
+.primary {
+	border: 1px solid transparent;
+	background: var(--color-primary);
+
+	span {
+		color: var(--color-dark);
+	}
+
+	&:hover {
+		background: var(--color-dark);
+
+		span {
+			color: var(--color-primary);
+			filter: invert(0);
+		}
+	}
+}

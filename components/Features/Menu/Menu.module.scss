@@ -1,0 +1,31 @@
+.link {
+	margin: calc(var(--index) * 0.5);
+
+	cursor: pointer;
+
+	transition: all 200ms ease-in-out;
+
+	font-family: 'Android', sans-serif;
+	font-size: calc(var(--index) * 0.9);
+
+	&:hover {
+		transform: translateY(-1px);
+		filter: drop-shadow(0 2px 1px rgba(255, 255, 255, 0.5));
+	}
+}
+
+.menuFooter {
+	flex-direction: column;
+}
+
+.a{
+	margin: calc(var(--index) * 0.5);
+
+	cursor: pointer;
+
+	transition: all 200ms ease-in-out;
+
+	font-family: 'Android', sans-serif;
+	font-size: calc(var(--index) * 0.9);
+
+}

@@ -1,0 +1,30 @@
+.carousel {
+	width: 100%;
+}
+
+.button {
+	width: calc(var(--index) * 3);
+	margin-left: calc(var(--index) * 0.5);
+
+	cursor: pointer;
+
+	transition: all 200ms ease-in-out;
+
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+.invert {
+	transform: rotate(180deg);
+}
+
+.swiper-slide-active {
+	transform: scale(1.4);
+}
+
+.a{
+	color: blue;
+}

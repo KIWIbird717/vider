@@ -1,0 +1,22 @@
+.wrapper {
+	z-index: 10;
+
+	overflow: hidden;
+
+	.video {
+		position: fixed;
+		z-index: 0;
+
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+
+		transition: all 200ms linear;
+	}
+
+	.scroller {
+		z-index: 10;
+	}
+}
+
+

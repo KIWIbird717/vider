@@ -1,0 +1,418 @@
+@import "../assets/font/stylesheet.css";
+
+:root {
+	--color-dark: #1E1E20;
+	--color-primary: #0FF;
+	--color-black: #0F0F0F;
+	--text-gradient: linear-gradient(139.52deg, #0FF -3.82%, #8F00FF 120.69%);
+	--index: calc(1vw + 1vh);
+	--gap: 1em;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	background: var(--color-dark);
+
+	font-family: 'Cera Pro', sans-serif;
+	font-size: calc(var(--index) * 1);
+}
+
+* {
+	position: relative;
+
+	box-sizing: border-box;
+
+	color: white;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input {
+	width: 100%;
+	height: 100%;
+
+	border: none;
+	outline: 0;
+	background: rgba(255, 255, 255, 0);
+
+	font-family: 'Android', sans-serif;
+
+	font-size: calc(var(--index) * 1.3);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.noSelect {
+	-webkit-touch-callout: none; /* iOS Safari */
+
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+.link {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(12, 12, 12, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(60, 60, 60, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: rgba(12, 12, 12, 0.6);
+}
+
+.android {
+	font-family: 'Android', sans-serif;
+}
+
+
+
+
+.roadblock1{
+	position: absolute;
+	top: calc(var(--index) * 6 );
+	right: calc(var(--index) * 18 );
+}
+
+.roadblock2{
+	position: absolute;
+	top: calc(var(--index) * 25.5);
+	left: calc(var(--index) * 5 );
+}
+
+.roadblock3{
+	position: absolute;
+	bottom: calc(var(--index) * 29);
+	right: calc(var(--index) * 30 );
+}
+
+.roadblock4{
+	position: absolute;
+	bottom: calc(var(--index) * 6);
+	right: calc(var(--index) * 15);
+}
+
+.stikerimg{
+	position: absolute;
+	top: 0.5%;
+	right: 0;
+	width: 97%;
+	height: 98.5%;
+	z-index: 1;
+}
+
+.imgcollection{
+	width: 100%;
+    margin-top: calc(var(--index) * -2);
+    margin-bottom: calc(var(--index) * -2);
+    transition: all 0.45s cubic-bezier(0.45, 0.54, 0.21, 1.3);
+}
+
+.video{
+	width: 'calc(var(--index) * 70'
+}
+
+.imgroad11{
+	width: calc(var(--index) * 67);
+	 mix-blend-mode: soft-light;
+}
+
+.imgroad2{
+	position: absolute;
+    top: 0.5%;
+    right: 0;
+    width: 97%;
+    height: 98.5%;
+    mix-blend-mode: soft-light;
+    z-index: 10;
+}
+
+.textAPP{
+	font-size: 2.1vw;
+	padding-bottom: 5vw;
+}
+.mobilemenu a{
+	display: none;
+	position: absolute;
+}
+.mobilemenu {
+	display: none;
+	position: absolute;
+}
+
+#header{
+	height: 3vw;
+    background-color: rgba(0, 0, 0, 0.176);
+    backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+.backmodul{
+	background-color: rgba(0, 0, 0, 0.847);
+    backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	
+}
+.socialsheader{
+	margin-top: -15px;
+}
+
+.mouse::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background: #fff;
+	margin-top: 25vw;
+    left: 90vw;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 0;
+    animation: mouse 3s infinite;
+	z-index: 999;
+	animation-iteration-count: 5;
+}
+
+.partners{
+	margin-top: 18vw;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.partnersimg{
+	margin-top: 3vw;
+	// width: 100%;
+	display: flex;
+	gap: 30px;
+}
+
+
+.partnersimg img{
+  padding: 2%;
+}
+
+.imgLinkedin{
+	width: 25px;
+}
+
+@keyframes mouse{
+	
+	from{
+		opacity: 1;
+		top: 700px;
+	}
+	to{
+		
+		opacity: 0;
+		top: 0px;	
+	}
+	
+}
+
+
+@media (min-width: 1922px) and (max-width:5000px){
+	.video{
+		width: 100vw;
+   		margin-left: 0;
+	}
+}
+
+@media (min-width: 1080px) and (max-width:1900px){
+
+	.aboutimg{
+		width: calc(var(--index) * 20 );
+    	margin-left: 4vw;
+	}
+}
+
+@media (max-width: 1700px) {
+	.roadblock1{
+		margin-left: 70vw;
+		right: auto;
+	}
+	.roadtext1{
+		margin-top: 0vw;
+	}
+	
+	.roadblock4{
+		right: auto;
+    	margin-left: 64vw;
+    	margin-bottom: 11vw;
+	}
+}
+
+@media (max-width: 1420px) {
+	.partnersimg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 1300px){
+	.roadblock3{
+		right: auto;
+		margin-left: 58vw;
+	}
+	.roadblock4{
+		right: auto;
+		margin-left: 80vw;
+	}
+}
+
+@media (max-width: 960px){
+
+	.partners{
+		margin-top: 25vw;
+	}
+	.partnersimg{
+		margin-top: 10vw;
+	}
+	.partnersimg img{
+		width: 70%;
+	}
+
+	
+	.mobilemenu a{
+		display: block;
+		position: relative;
+	}
+	.mobilemenu{
+		position: relative;
+	}
+	.mobilemenutext{
+		text-decoration: none;
+
+	}
+
+	.roadtext1{
+		margin-top: 3vw;
+	}
+
+	.video{
+		width: 400%;
+		margin-left: -780px;
+	}
+
+	.roadblock1{
+		margin-left: 9vw;
+   		top: 6vw;
+	}
+
+	.roadblock2{
+		top: auto;
+		left: auto;
+		margin-top: 111vw;
+	}
+
+	.roadblock3{
+		margin-left: 46vw;
+		top: 46vw;
+	}
+	.roadblock4{
+		right: auto;
+    	margin-left: 64vw;
+   		margin-bottom: 67vw;
+	}
+	.stikerimg{
+		right: auto;
+	}
+	#imgbike{
+		margin-left: -22px;
+   		 width: 200vw;
+	}
+	.imgcollection{
+		width: 70vw;
+	}
+	.imgroad1{
+		margin-left: -11vw;
+   		margin-top: 32vw;
+	}
+
+	.imgroad2{
+		margin-left: -40vw;
+	}
+	.textAPP{
+		font-size: 3.5vw;
+	}
+	
+}
+
+@media (max-width: 920px){
+	.roadblock2{
+		margin-top: 108vw;
+	}
+	.roadblock3{
+		top: 59vw;
+		margin-left: 26vw;
+	}
+	.roadblock2 {
+		margin-top: 95vw;
+	}
+}
+
+@media (max-width: 500px){
+	.imgcollection{
+		width: 220%;
+	}
+
+	.imgroad1{
+		margin-left: -64vw;
+   		margin-top: 34vw;
+	}
+
+	.roadblock1{
+		margin-left: 9vw;
+   		top: 6vw;
+	}
+
+	.roadblock2{
+		top: auto;
+		left: auto;
+		margin-top: 58vw;
+	}
+
+	.roadblock3{
+		margin-left: 2vw;
+		top: 120vw;
+	}
+	.roadblock4{
+		right: auto;
+    	margin-left: 64vw;
+		margin-bottom: 90vw;
+	}
+	.bikers{
+		margin-top: -50px;
+	}
+}
