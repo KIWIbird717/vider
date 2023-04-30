@@ -7,6 +7,7 @@
     "export": "next export",
     "dev": "next dev --port 3001",
     "deploy": "gh-pages -d build",
+    "build": "next build",
     "start": "next start",
     "stylelint": "stylelint '**/*.css' '**/*.scss' --fix",
     "lint": "eslint --fix .",
