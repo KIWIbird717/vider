@@ -1,0 +1,90 @@
+.text {
+	display: flex;
+	align-items: center;
+}
+
+.h1 {
+	font-size: calc(var(--index) * 1);
+	font-weight: 600;
+}
+
+.h2 {
+	font-size: calc(var(--index) * 1.5);
+	font-weight: 700;
+}
+
+.h3 {
+	font-family: 'Android', sans-serif;
+
+	font-size: calc(var(--index) * 3.4);
+	font-weight: 700;
+}
+
+.h4 {
+	font-family: 'Android', sans-serif;
+
+	font-size: calc(var(--index) * 2);
+}
+
+.b1 {
+	font-size: calc(var(--index) * 0.55);
+}
+
+.b2 {
+	font-size: calc(var(--index) * 0.6);
+}
+
+.b3 {
+	font-size: calc(var(--index) * 0.7);
+}
+
+.gr {
+	background: var(--text-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.primaryColor {
+	color: var(--color-primary);
+}
+
+.bd {
+	font-weight: 600;
+}
+
+.upp {
+	text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+
+	.h1 {
+		font-size: calc(var(--index) * 1);
+	}
+
+	.h2 {
+		font-size: calc(var(--index) * 1.5);
+	}
+
+	.h3 {
+		font-size: calc(var(--index) * 3.4);
+	}
+
+	.h4 {
+		font-size: calc(var(--index) * 4);
+	}
+
+	.b1 {
+		font-size: calc(var(--index) * 1.2);
+	}
+
+	.b2 {
+		font-size: calc(var(--index) * 0.6);
+	}
+
+	.b3 {
+		font-size: calc(var(--index) * 1.4);
+	}
+}

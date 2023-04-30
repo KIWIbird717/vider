@@ -1,0 +1,30 @@
+.card {
+	position: relative;
+	z-index: 15;
+
+	border-radius: 15px;
+
+	background: #161616;
+	box-shadow: inset 1.9px 1.9px 9px rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(14px);
+}
+
+.card::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	content: "";
+
+	border: 2px solid transparent;
+	border-radius: 15px;
+	background: linear-gradient(140deg, #0FF 20%, rgba(255, 255, 255, 0) 40%) border-box;
+	mask:
+		linear-gradient(#FFF 0 0) padding-box,
+		linear-gradient(#FFF 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+}
+

@@ -1,0 +1,53 @@
+.accordionPuzzle {
+	cursor: pointer;
+	transition: all 400ms ease-in-out;
+}
+
+.line {
+	position: absolute;
+
+	width: calc(var(--index) * 1.2);
+	height: calc(var(--index) * 0.08);
+
+	transition: all 500ms cubic-bezier(0.45, 0.55, 0.2, 1.5);
+
+	background: var(--color-primary);
+}
+
+.plus {
+	transform: rotate(90deg);
+}
+
+.puzzleActive {
+	background-color: hsla(215, 72%, 57%, 1);
+	background-image:
+		radial-gradient(at 10% 90%, hsla(175, 78%, 72%, 1) 0, transparent 50%),
+		radial-gradient(at 90% 40%, hsla(289, 78%, 72%, 1) 0, transparent 50%),
+		radial-gradient(at 9% 55%, hsla(175, 78%, 72%, 1) 0, transparent 50%),
+		radial-gradient(at 94% 6%, hsla(293, 78%, 72%, 1) 0, transparent 50%),
+		radial-gradient(at 92% 78%, hsla(280, 78%, 72%, 1) 0, transparent 50%),
+		radial-gradient(at 4% 8%, hsla(180, 78%, 72%, 1) 0, transparent 50%);
+
+	.wrapper {
+
+		filter: brightness(0.1);
+	}
+
+	.info {
+		height: auto;
+
+		transition: all 300ms ease-in-out;
+		transition-delay: 150ms;
+		filter: brightness(0.1);
+
+		opacity: 1;
+	}
+}
+
+.info {
+	height: 0;
+
+	transform-origin: top;
+
+	opacity: 0;
+}

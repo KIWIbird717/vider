@@ -1,0 +1,29 @@
+.carousel {
+	width: 100%;
+}
+
+.button {
+	width: calc(var(--index) * 2.5);
+	margin-left: calc(var(--index) * 0.5);
+
+	cursor: pointer;
+
+	transition: all 200ms ease-in-out;
+
+	opacity: 0.2;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+.invert {
+	transform: rotate(180deg);
+}
+
+.slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//opacity: active === index ? 1 : 0.5
+}

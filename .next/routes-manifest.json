@@ -1,0 +1,1 @@
+{"version":3,"pages404":true,"basePath":"/vider","redirects":[{"source":"/vider/","destination":"/vider","basePath":false,"internal":true,"statusCode":308,"regex":"^/vider/$"},{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[],"dataRoutes":[],"rewrites":[]}

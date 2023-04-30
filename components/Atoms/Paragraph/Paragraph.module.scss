@@ -1,0 +1,31 @@
+.paragraph {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 2px solid;
+	border-image-source: linear-gradient(139.52deg, #0FF -3.82%, #8F00FF 120.69%);
+	border-image-slice: 1;
+}
+
+.point {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: var(--text-gradient);
+}
+
+.triangle {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	border: 11px solid transparent;
+	border-right: 11px solid blueviolet;
+	border-bottom: 11px solid blueviolet;
+}
